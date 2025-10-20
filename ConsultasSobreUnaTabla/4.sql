@@ -1,2 +1,2 @@
 /*Lista el nombre de los productos, el precio en euros y el precio en dólares estadounidenses*/
-select nombre,FORMAT(precio/1421.50,"C", 'en-US') AS PrecioUSD from producto;
+select nombre,CONCAT("$",producto.precio/1461) As Dolar,CONCAT("€",producto.precio/1703)AS euro from producto;
